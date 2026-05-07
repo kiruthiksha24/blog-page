@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    #header {
+      background-color: #2d6a4f;
+      color: white;
+      padding: 30px 40px;
+    }
+
+    #header h1 { font-size: 2rem; }
+    #header p  { font-size: 0.9rem; color: #b7e4c7; margin-top: 5px; }
+
+    #navbar {
+      background-color: #1b4332;
+      padding: 12px 40px;
+      display: flex;
+      gap: 24px;
+    }
+
+    #navbar a {
+      color: #d8f3dc;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    #navbar a:hover { color: #ffffff; }
+
+    #main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section-heading {
+      font-size: 1.2rem;
+      color: #2d6a4f;
+      border-bottom: 2px solid #2d6a4f;
+      padding-bottom: 6px;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+
+    .card .tag {
+      background-color: #2d6a4f;
+      color: white;
+      font-size: 0.75rem;
+      padding: 3px 10px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .card h2 {
+      font-size: 1.1rem;
+      color: #1b4332;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    .card a {
+      color: #2d6a4f;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid #2d6a4f;
+      padding: 5px 14px;
+      border-radius: 5px;
+    }
+
+    .card a:hover {
+      background-color: #2d6a4f;
+      color: white;
+    }
+
+    #footer {
+      background-color: #1b4332;
+      color: #b7e4c7;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="header">
+    <h1>My Blog</h1>
+    <p>Simple thoughts on web development.</p>
+  </header>
+
+  <nav id="navbar">
+    <a href="#">Home</a>
+    <a href="#">CSS</a>
+    <a href="#">HTML</a>
+    <a href="#">About</a>
+  </nav>
+
+  <main id="main">
+    <h2 class="section-heading">Latest Posts</h2>
+
+    <div class="card">
+      <span class="tag">CSS</span>
+      <h2>Understanding the Box Model</h2>
+      <p>Every HTML element is a box. The box model includes content, padding, border, and margin. Knowing this helps you control layout precisely.</p>
+      <a href="#">Read More</a>
+    </div>
+
+    <div class="card">
+      <span class="tag">HTML</span>
+      <h2>Semantic HTML Matters</h2>
+      <p>Using tags like header, nav, main, and footer makes your code readable and improves accessibility for screen readers.</p>
+      <a href="#">Read More</a>
+    </div>
+
+    <div class="card">
+      <span class="tag">CSS</span>
+      <h2>CSS Selectors Explained</h2>
+      <p>Class selectors, ID selectors, pseudo-classes — understanding selectors is key to writing clean and targeted CSS styles.</p>
+      <a href="#">Read More</a>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <p>&copy; 2026 My Blog — Built with HTML & CSS</p>
+  </footer>
+
+</body>
+</html>
